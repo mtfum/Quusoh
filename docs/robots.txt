@@ -1,4 +1,15 @@
+User-agent: Googlebot
+Disallow: /top/secret/stuff
+Disallow: /wp-admin
+
+User-agent: bingbot
+Disallow: /top/secret/stuff
+Disallow: /wp-admin
+
+User-agent: GPTBot
+Disallow: *
+
 User-agent: *
 Allow: /
 
-Sitemap: https://www.quusoh.co.jp/sitemap.xml
+Sitemap: https://quusoh.co.jp/sitemap.xml

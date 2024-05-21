@@ -3,27 +3,31 @@ import Ignite
 
 @main
 struct IgniteWebsite {
-    static func main() async {
-        let site = QuusohSite()
+  static func main() async {
+    let site = QuusohSite()
 
-        do {
-            try await site.publish()
-        } catch {
-            print(error.localizedDescription)
-        }
+    do {
+      try await site.publish(buildDirectoryPath: "docs")
+    } catch {
+      print(error.localizedDescription)
     }
+  }
 }
 
 struct QuusohSite: Site {
-    var name = "合同会社クウソウ"
-    var baseTitle = " – "
-    var url = URL("https://www.quusoh.co.jp")
-    var builtInIconsEnabled = true
+  var name = "合同会社クウソウ"
+  var baseTitle = " – Quusoh Inc."
+  var url = URL("https://quusoh.co.jp")
+  var builtInIconsEnabled = true
+  var language: Language = .japanese
+  var robotsConfiguration = Robots()
 
-    var author = "John Appleseed"
+  var author = "Fumiya Yamanaka"
 
-    var homePage = Home()
-    var theme = MyTheme()
+  var homePage = Home()
+  var theme = MyTheme()
+
+  var pages: [any StaticPage] {
+    Company()
+  }
 }
-
-
