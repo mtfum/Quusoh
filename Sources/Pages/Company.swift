@@ -4,6 +4,9 @@ struct Company: StaticPage {
   let title: String = "会社情報"
 
   func body(context: PublishingContext) async -> [any BlockElement] {
+    Text("会社情報")
+      .font(.title1)
+
     Table {
       Row {
         "会社名"

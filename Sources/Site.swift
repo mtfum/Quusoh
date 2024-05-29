@@ -29,5 +29,8 @@ struct QuusohSite: Site {
 
   var pages: [any StaticPage] {
     Company()
+    Vision()
+    Works()
+    Contact()
   }
 }
