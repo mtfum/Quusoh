@@ -6,14 +6,12 @@ public struct Footer: Component {
 
   public func body(context: PublishingContext) -> [any PageElement] {
     Text {
-      "Created with "
-      Link("Ignite", target: URL("https://github.com/twostraws/Ignite"))
+//      "Created with "
+//      Link("Ignite", target: URL("https://github.com/twostraws/Ignite"))
 
-      Text("Copyright")
-
-      Link("Email📧", target: URL("mailto:hello@quusoh.co.jp"))
+      Text("Copyright © 2024 Quusoh Inc. All rights reserved.")
     }
-    .horizontalAlignment(.center)
-    .margin(.top, .extraLarge)
+    .position(.fixedBottom)
+    .horizontalAlignment(.trailing)
   }
 }

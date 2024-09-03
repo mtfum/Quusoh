@@ -4,8 +4,7 @@ struct Contact: StaticPage {
   let title: String = "お問い合わせ"
 
   func body(context: PublishingContext) async -> [any BlockElement] {
-    Text {
-      
-    }
+    Text("お問い合わせ")
+      .font(.title1)
   }
 }

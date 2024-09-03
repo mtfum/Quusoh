@@ -27,10 +27,10 @@ struct QuusohSite: Site {
   var homePage = Home()
   var theme = MyTheme()
 
-  var pages: [any StaticPage] {
-    Company()
-    Vision()
-    Works()
-    Contact()
-  }
+//  var pages: [any StaticPage] {
+//    Company()
+//    Vision()
+//    Works()
+//    Contact()
+//  }
 }

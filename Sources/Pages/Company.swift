@@ -30,7 +30,10 @@ struct Company: StaticPage {
       }
       Row {
         "お問い合わせ"
-        "こちらよりお問い合わせください"
+        Text {
+          Link("コンタクト", target: "/contact")
+          "よりお問い合わせください"
+        }
       }
     }
   }
